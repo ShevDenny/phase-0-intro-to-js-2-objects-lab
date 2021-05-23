@@ -6,7 +6,7 @@ const employee = {
     },
     city: 'Jersey City',
     state: 'New Jersey',
-    zipCode: '100023'
+    zipCode: '10023'
 }
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
@@ -19,7 +19,7 @@ function updateEmployeeWithKeyAndValue(employee, key, value) {
      return employee;
  }
  function deleteFromEmployeeByKey(employee, key) {
-     const deleteEmployee = {...employee};
+     const deleteEmployee = Object.assign({}, employee);
      delete deleteEmployee[key];
     return deleteEmployee;
  }
